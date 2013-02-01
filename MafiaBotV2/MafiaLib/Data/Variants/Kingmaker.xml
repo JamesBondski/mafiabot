@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Game>
+  <Name>Kingmaker</Name>
+  <Players>7</Players>
+  <Teams>
+    <Team>
+      <Name>Town</Name>
+      <WinsWhen>NoEvilLeft</WinsWhen>
+      <Roles>
+        <Role>
+          <Name>Vanilla Townie</Name>
+          <Count>4</Count>
+        </Role>
+        <Role>
+          <Name>Hero</Name>
+          <Count>1</Count>
+          <Hero />
+        </Role>
+        <Role>
+          <Name>Vanilla Townie</Name>
+          <Count>1</Count>
+          <Kingmake />
+        </Role>
+      </Roles>
+    </Team>
+    <Team>
+      <Name>Assassins</Name>
+      <WinsWhen>MajorityOrEqual|NoEvilLeft</WinsWhen>
+      <Evil />
+      <Nightkill />
+      <KnowsGroup />
+      <Roles>
+        <Role>
+          <Name>Assassin</Name>
+          <Count>1</Count>
+        </Role>
+      </Roles>
+    </Team>
+  </Teams>
+  <Cardflip />
+  <Instalynch />
+  <NoLynch />
+  <InitialPhase>Dawn</InitialPhase>
+</Game>

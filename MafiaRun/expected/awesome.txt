@@ -1,0 +1,39 @@
+Joined-#mafia2:#mafia2
+Joined-#mafia_test:#mafia_test
+C-#mafia2:Game created! To join the game, go to channel #mafia_test.
+Op-#mafia_test:Bot0
+C-#mafia_test:Bot0 has joined the game (1 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot1 has joined the game (2 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot2 has joined the game (3 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot3 has joined the game (4 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot4 has joined the game (5 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot5 has joined the game (6 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot6 has joined the game (7 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Variant set to C9. Players: 7/7
+W-Bot0: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot1: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot2: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot3: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot4: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot5: You are a Triggerhappy Gun Nut. You have the following powers: shoot. You belong to faction Town. 
+W-Bot6: You are a Mafia. You have the following powers: shoot. You belong to faction Mafia. Your faction has the following powers: nightkill, members
+W-Bot6: Your factions members are: Bot6. 
+Mode-#mafia_test:+m
+C-#mafia_test:It is now Day
+Mode-#mafia_test:+vvvvvvv Bot0 Bot1 Bot2 Bot3 Bot4 Bot5 Bot6
+C-#mafia_test:Bot2 (Triggerhappy Gun Nut) has been killed.
+Devoice-#mafia_test:Bot2
+C-#mafia_test:Bot6 (Mafia) has been killed.
+Devoice-#mafia_test:Bot6
+C-#mafia_test:Day is over.
+C-#mafia_test:The game is over! Winning factions: Town(Bot0, Bot1, Bot3, Bot4, Bot5, Bot2(RIP)).
+C-#mafia_test:Role list: 
+C-#mafia_test:Bot0: Triggerhappy Gun Nut
+C-#mafia_test:Bot1: Triggerhappy Gun Nut
+C-#mafia_test:Bot2: Triggerhappy Gun Nut
+C-#mafia_test:Bot3: Triggerhappy Gun Nut
+C-#mafia_test:Bot4: Triggerhappy Gun Nut
+C-#mafia_test:Bot5: Triggerhappy Gun Nut
+C-#mafia_test:Bot6: Mafia
+Mode-#mafia_test:-m
+Left-#mafia_test:#mafia_test

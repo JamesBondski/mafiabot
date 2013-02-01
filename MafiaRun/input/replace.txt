@@ -1,0 +1,8 @@
+G:bots 4
+0:join #mafia2
+0:say #mafia2 ##create test
+A:join #mafia_test
+0:say #mafia2 ##variant #D6br7sqfW8rgABABUIUYAgABUIUYAgIgirQtwBCAFQhRgCCk
+0:say #mafia2 ##start
+0:say #mafia2 ##replace bot1 bot3
+A:say #mafia2 ##vote bot3

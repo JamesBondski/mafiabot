@@ -1,0 +1,23 @@
+Joined-#mafia2:#mafia2
+Joined-#mafia_test:#mafia_test
+C-#mafia2:Game created! To join the game, go to channel #mafia_test.
+Op-#mafia_test:Bot0
+C-#mafia_test:Bot1 has joined the game (1 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot2 has joined the game (2 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot3 has joined the game (3 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot4 has joined the game (4 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot5 has joined the game (5 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot6 has joined the game (6 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot7 has joined the game (7 players now). To leave the game, leave the channel or use the ##leave command.
+Mode-#mafia_test:+m
+C-#mafia_test:The game has started. You can talk as soon as the mod uses the ##voice command.
+Mode-#mafia_test:+vvvvvvv Bot1 Bot2 Bot3 Bot4 Bot5 Bot6 Bot7
+C-#mafia_test:Count: Bot1(Bot1).
+C-#mafia_test:Count: Bot1(Bot1, Bot2).
+C-#mafia_test:Count: Bot1(Bot1, Bot2, Bot3).
+Devoice-#mafia_test:Bot1
+C-#mafia_test:Bot1 has been killed.
+Mode-#mafia_test:-vvvvvvv Bot1 Bot2 Bot3 Bot4 Bot5 Bot6 Bot7
+C-#mafia_test:Count: Bot1(Bot1, Bot2, Bot3, Bot4).
+Devoice-#mafia_test:Bot2
+Mode-#mafia_test:+vvvvvvv Bot3 Bot4 Bot5 Bot6 Bot7

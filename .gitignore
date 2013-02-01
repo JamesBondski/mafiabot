@@ -1,0 +1,12 @@
+*.suo
+*.user
+TestResults
+MafiaBotV2/bin
+MafiaBotV2/obj
+MafiaBot.Test2/bin
+MafiaBot.Test2/obj
+MafiaRun/bin
+MafiaRun/obj
+VariantDesigner/bin
+VariantDesigner/obj
+count.exe

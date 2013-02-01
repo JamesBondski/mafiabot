@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B8B7251-96BC-4157-8980-32186B330727}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MafiaBotV2</RootNamespace>
+    <AssemblyName>MafiaBotV2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Meebey.SmartIrc4net, Version=0.4.5.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>deps\Meebey.SmartIrc4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>deps\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barebones\BarebonesGame.cs" />
+    <Compile Include="Barebones\Commands\AddCommand.cs" />
+    <Compile Include="Barebones\Commands\ResetCommand.cs" />
+    <Compile Include="Barebones\Commands\UnvoteCommand.cs" />
+    <Compile Include="Barebones\Commands\KillCommand.cs" />
+    <Compile Include="Barebones\Commands\VoiceCommand.cs" />
+    <Compile Include="Barebones\Commands\VoteCommand.cs" />
+    <Compile Include="Barebones\Commands\VotecountCommand.cs" />
+    <Compile Include="BasicGame.cs" />
+    <Compile Include="Bot.cs" />
+    <Compile Include="CommandParser.cs" />
+    <Compile Include="Commands\CommandsCommand.cs" />
+    <Compile Include="Commands\CreateCommand.cs" />
+    <Compile Include="Commands\DestroyCommand.cs" />
+    <Compile Include="Commands\HelpCommand.cs" />
+    <Compile Include="Commands\JoinCommand.cs" />
+    <Compile Include="Commands\LeaveCommand.cs" />
+    <Compile Include="Commands\ListCommand.cs" />
+    <Compile Include="Commands\OpDestroyCommand.cs" />
+    <Compile Include="Commands\StartCommand.cs" />
+    <Compile Include="Commands\VariantsCommand.cs" />
+    <Compile Include="DonationMessage.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="IGame.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="MafiaGame\Commands\AdminCommand.cs" />
+    <Compile Include="MafiaGame\Commands\DeadlineCommand.cs" />
+    <Compile Include="MafiaGame\Commands\FactionCommand.cs" />
+    <Compile Include="MafiaGame\Commands\ModkillCommand.cs" />
+    <Compile Include="MafiaGame\Commands\PowerCommand.cs" />
+    <Compile Include="MafiaGame\Commands\ReplaceCommand.cs" />
+    <Compile Include="MafiaGame\Commands\RoleCommand.cs" />
+    <Compile Include="MafiaGame\Commands\SkipCommand.cs" />
+    <Compile Include="MafiaGame\Commands\VariantCommand.cs" />
+    <Compile Include="MafiaGame\Commands\VoteCountCommand.cs" />
+    <Compile Include="MafiaGame\Http\HttpInterface.cs" />
+    <Compile Include="MafiaGame\MafiaGame.cs" />
+    <Compile Include="MafiaGame\MafiaUser.cs" />
+    <Compile Include="MafiaGame\OutsideConnectors.cs" />
+    <Compile Include="MafiaLib\Action.cs" />
+    <Compile Include="MafiaLib\Actor.cs" />
+    <Compile Include="MafiaLib\Effect.cs" />
+    <Compile Include="MafiaLib\Effects\CancellingEffect.cs" />
+    <Compile Include="MafiaLib\Effects\FlipInvestigationEffect.cs" />
+    <Compile Include="MafiaLib\Effects\HeroEffect.cs" />
+    <Compile Include="MafiaLib\Effects\PowerGrantingEffect.cs" />
+    <Compile Include="MafiaLib\Effects\TrackedEffect.cs" />
+    <Compile Include="MafiaLib\Faction.cs" />
+    <Compile Include="MafiaLib\IOutsideConnector.cs" />
+    <Compile Include="MafiaLib\IVariantLoader.cs" />
+    <Compile Include="MafiaLib\Phase.cs" />
+    <Compile Include="MafiaLib\Power.cs" />
+    <Compile Include="MafiaLib\Powers\AggregatePower.cs" />
+    <Compile Include="MafiaLib\Powers\DaykillPower.cs" />
+    <Compile Include="MafiaLib\Powers\InvestigatePower.cs" />
+    <Compile Include="MafiaLib\Powers\KingmakePower.cs" />
+    <Compile Include="MafiaLib\Powers\MembersPower.cs" />
+    <Compile Include="MafiaLib\Powers\NightkillPower.cs" />
+    <Compile Include="MafiaLib\Powers\ProtectPower.cs" />
+    <Compile Include="MafiaLib\Powers\RoleblockPower.cs" />
+    <Compile Include="MafiaLib\Powers\TrackerPower.cs" />
+    <Compile Include="MafiaLib\Powers\UnvotePower.cs" />
+    <Compile Include="MafiaLib\Powers\VotePower.cs" />
+    <Compile Include="MafiaLib\Restrictions.cs" />
+    <Compile Include="MafiaLib\RoleManager.cs" />
+    <Compile Include="MafiaLib\Sources\BasicLayoutSource.cs" />
+    <Compile Include="MafiaLib\Sources\RandomSource.cs" />
+    <Compile Include="MafiaLib\Sources\XmlSource.cs" />
+    <Compile Include="MafiaLib\VariantManager.cs" />
+    <Compile Include="MafiaLib\Village.cs" />
+    <Compile Include="MafiaLib\VillageMember.cs" />
+    <Compile Include="MafiaLib\VillageRules.cs" />
+    <Compile Include="MafiaLib\VoteCounter.cs" />
+    <Compile Include="MafiaLib\WinConditions.cs" />
+    <Compile Include="MafiaGame\UserMemberMapper.cs" />
+    <Compile Include="Network\File\FileChannel.cs" />
+    <Compile Include="Network\File\FileMaster.cs" />
+    <Compile Include="Network\File\FileUser.cs" />
+    <Compile Include="Network\File\OutputLogger.cs" />
+    <Compile Include="Network\Irc\IrcChannel.cs" />
+    <Compile Include="Network\Irc\IrcMaster.cs" />
+    <Compile Include="Network\Irc\IrcUser.cs" />
+    <Compile Include="Network\MessageEventArgs.cs" />
+    <Compile Include="Network\NetChannel.cs" />
+    <Compile Include="Network\NetMaster.cs" />
+    <Compile Include="Network\NetObject.cs" />
+    <Compile Include="Network\NetUser.cs" />
+    <Compile Include="Network\UserEventArgs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ListFormatter.cs" />
+    <Compile Include="Util\ListShuffle.cs" />
+    <Compile Include="Util\Scheduler.cs" />
+    <Compile Include="Util\VoteCounter.cs" />
+    <Compile Include="Util\WeightedRandom.cs" />
+    <Compile Include="MafiaException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MafiaLib\Data\Roles.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Variants.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Variants\C9.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MafiaLib\Data\Variants\Kingmaker.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Variants\vigilante.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Variants\Awesome.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Variants\PieC9.xml" />
+    <EmbeddedResource Include="MafiaLib\Data\Random\Profiles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="MafiaGame\Http\Data\mafiabot.css" />
+    <EmbeddedResource Include="MafiaGame\Http\Data\mafiabot.js" />
+    <EmbeddedResource Include="MafiaGame\Http\Data\admin.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

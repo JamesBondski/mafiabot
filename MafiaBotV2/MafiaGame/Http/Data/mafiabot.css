@@ -1,0 +1,39 @@
+﻿body
+{
+}
+
+.role
+{
+    background-color: lightgrey;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-top: 1px;
+}
+
+.rolelink
+{
+    float: right;
+}
+
+.roletext
+{
+    float: left;
+}
+
+#mafiaRoles
+{
+    min-height: 200px;
+    margin-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#townRoles
+{
+    min-height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 20px;
+}

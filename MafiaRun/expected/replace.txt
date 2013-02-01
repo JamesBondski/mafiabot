@@ -1,0 +1,29 @@
+Joined-#mafia2:#mafia2
+Joined-#mafia_test:#mafia_test
+C-#mafia2:Game created! To join the game, go to channel #mafia_test.
+Op-#mafia_test:Bot0
+C-#mafia_test:Bot0 has joined the game (1 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot1 has joined the game (2 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot2 has joined the game (3 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot3 has joined the game (4 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Variant set to 3Player. Players: 4/3
+W-Bot0: You are a Vanilla Townie. You do not have any special powers. You belong to faction Town. 
+W-Bot1: You are a Vanilla Townie. You do not have any special powers. You belong to faction Town. 
+W-Bot2: You are a Mafia. You do not have any special powers. You belong to faction Mafia. Your faction has the following powers: nightkill, members
+W-Bot2: Your factions members are: Bot2. 
+Mode-#mafia_test:+m
+C-#mafia_test:It is now Day
+Mode-#mafia_test:+vvv Bot0 Bot1 Bot2
+C-#mafia2:bot1 has been replaced by bot3
+C-#mafia_test:Count: Bot3(Bot0).
+C-#mafia_test:Bot3 (Vanilla Townie) has been lynched.
+Devoice-#mafia_test:Bot3
+C-#mafia_test:Day is over.
+C-#mafia_test:The game is over! Winning factions: Mafia(Bot2).
+C-#mafia_test:Role list: 
+C-#mafia_test:Bot0: Vanilla Townie
+C-#mafia_test:Bot3: Vanilla Townie
+C-#mafia_test:Bot2: Mafia
+Mode-#mafia_test:-m
+Left-#mafia_test:#mafia_test
+C-#mafia_test:No votes cast.

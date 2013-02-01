@@ -1,0 +1,12 @@
+﻿G:bots 8
+0:join #mafia2
+0:say #mafia2 ##create test barebones
+A:join #mafia_test
+0:say #mafia_test ##start
+0:say #mafia_test ##voice
+1:say #mafia_test ##vote Bot1
+2:say #mafia_test ##vote Bot1
+3:say #mafia_test ##vote Bot1
+4:say #mafia_test ##vote Bot1
+0:say #mafia_test ##kill Bot2
+0:say #mafia_test ##voice

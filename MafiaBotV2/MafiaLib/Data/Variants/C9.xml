@@ -1,0 +1,42 @@
+<Game>
+	<Name>C9</Name>
+	<Players>7</Players>
+  <Teams>
+    <Team>
+      <Name>Town</Name>
+      <WinsWhen>NoEvilLeft</WinsWhen>
+      <Roles>
+        <Role>
+          <Name>Vanilla Townie</Name>
+          <Count>*</Count>
+        </Role>
+        <Role>
+          <Name>Doctor</Name>
+          <Count>0-1</Count>
+          <Protect />
+        </Role>
+        <Role>
+          <Name>Cop</Name>
+          <Count>0-1</Count>
+          <Investigate />
+        </Role>
+      </Roles>
+    </Team>
+    <Team>
+      <Name>Mafia</Name>
+      <WinsWhen>MajorityOrEqual|NoEvilLeft</WinsWhen>
+      <Evil />
+      <Nightkill />
+      <KnowsGroup />
+      <Roles>
+        <Role>
+          <Name>Mafia</Name>
+          <Count>2</Count>
+        </Role>
+      </Roles>
+    </Team>
+  </Teams>	
+	<Cardflip />
+	<Instalynch />
+	<NoLynch />
+</Game>

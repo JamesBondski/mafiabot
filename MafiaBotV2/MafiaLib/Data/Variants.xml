@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Variants>
+  <Variant>
+    <Name>C9</Name>
+    <File>MafiaBotV2.MafiaLib.Data.Variants.C9.xml</File>
+    <Description>Standard C9 game with 2 Mafia, 0-1 Doctor, 0-1 Cop and 3-5 Vanilla Townies.</Description>
+  </Variant>
+  <Variant>
+    <Name>PieC9</Name>
+    <File>MafiaBotV2.MafiaLib.Data.Variants.PieC9.xml</File>
+    <Description>Pie C9 game with 1 Mafia, 1 Mafia Roleblocker, 1 Doctor, 1 Cop and 3 Vanilla Townies.</Description>
+  </Variant>
+  <Variant>
+    <Name>Awesome</Name>
+    <File>MafiaBotV2.MafiaLib.Data.Variants.Awesome.xml</File>
+    <Description>Awesome!</Description>
+  </Variant>
+  <Variant>
+    <Name>Vigilante</Name>
+    <File>MafiaBotV2.MafiaLib.Data.Variants.vigilante.xml</File>
+    <Description>A game for six people. One player is a vigilante who can choose to kill someone once during the game during the day, ending voting. One is a cop, one is mafia, and three are townies.</Description>
+  </Variant>
+  <Variant>
+    <Name>Kingmaker</Name>
+    <File>MafiaBotV2.MafiaLib.Data.Variants.Kingmaker.xml</File>
+    <Description>Kingmaker.</Description>
+  </Variant>
+</Variants>

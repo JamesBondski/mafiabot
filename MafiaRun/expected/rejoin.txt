@@ -1,0 +1,35 @@
+Joined-#mafia2:#mafia2
+Joined-#mafia_test:#mafia_test
+C-#mafia2:Game created! To join the game, go to channel #mafia_test.
+Op-#mafia_test:Bot0
+C-#mafia_test:Bot0 has joined the game (1 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot1 has joined the game (2 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot2 has joined the game (3 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot3 has joined the game (4 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot4 has joined the game (5 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot5 has joined the game (6 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Bot6 has joined the game (7 players now). To leave the game, leave the channel or use the ##leave command.
+C-#mafia_test:Variant set to PieC9. Players: 7/7
+W-Bot0: You are a Vanilla Townie. You do not have any special powers. You belong to faction Town. 
+W-Bot1: You are a Vanilla Townie. You do not have any special powers. You belong to faction Town. 
+W-Bot2: You are a Vanilla Townie. You do not have any special powers. You belong to faction Town. 
+W-Bot3: You are a Doctor. You have the following powers: protect. You belong to faction Town. 
+W-Bot4: You are a Cop. You have the following powers: investigate. You belong to faction Town. 
+W-Bot5: You are a Mafia. You do not have any special powers. You belong to faction Mafia. Your faction has the following powers: nightkill, members
+W-Bot5: Your factions members are: Bot5, . 
+W-Bot6: You are a Roleblocker. You have the following powers: block. You belong to faction Mafia. Your faction has the following powers: nightkill, members
+W-Bot6: Your factions members are: Bot5, Bot6. 
+Mode-#mafia_test:+m
+C-#mafia_test:It is now Day
+Mode-#mafia_test:+vvvvvvv Bot0 Bot1 Bot2 Bot3 Bot4 Bot5 Bot6
+C-#mafia_test:Count: Bot3(Bot0).
+C-#mafia_test:Count: Bot3(Bot0, Bot1).
+C-#mafia_test:Count: Bot3(Bot0, Bot1, Bot2).
+C-#mafia_test:Bot3 (Doctor) has been lynched.
+Devoice-#mafia_test:Bot3
+C-#mafia_test:Day is over.
+Mode-#mafia_test:-vvvvvvv Bot0 Bot1 Bot2 Bot3 Bot4 Bot5 Bot6
+C-#mafia_test:It is now Night
+C-#mafia_test:No votes cast.
+C-#mafia_test:You have no commands right now. Channel commands: votecount.
+C-#mafia_test:Your commands: vote, unvote. Channel commands: votecount.

@@ -1,0 +1,4 @@
+﻿Investigate 0
+Nightkill 500
+Protect 750
+Tracker 1000

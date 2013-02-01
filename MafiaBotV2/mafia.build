@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project name="MafiaBot" default="build" basedir=".">
+	<property name="debug" value="true" overwrite="false" />
+	<property name="config" value="bin/config.xml" />
+	<target name="clean">
+		<delete file="MafiaBot.exe" failonerror="false" />
+	</target>
+	<target name="build">
+		<csc target="exe" output="MafiaBotV2.exe" debug="${debug}">
+			<references>
+				<include name="deps/Meebey.SmartIrc4net.dll" />
+				<include name="System.Xml.Linq.dll" />
+				<include name="deps/NLog.dll" />
+			</references>
+			<sources>
+				<include name="*.cs" />
+				<include name="Commands/*.cs" />
+				<include name="Properties/*.cs" />
+				<include name="Util/*.cs" />
+				<include name="Network/*.cs" />
+				<include name="Network/Irc/*.cs" />
+				<include name="Network/File/*.cs" />
+				<include name="MafiaLib/*.cs" />
+				<include name="MafiaLib/Sources/*.cs" />
+				<include name="MafiaLib/Powers/*.cs" />
+				<include name="MafiaLib/Effects/*.cs" />
+				<include name="MafiaGame/*.cs" />
+				<include name="MafiaGame/Commands/*.cs" />
+				<include name="MafiaGame/Http/*.cs" />
+				<include name="Barebones/*.cs" />
+				<include name="Barebones/Commands/*.cs" />
+			</sources>
+			<resources prefix="MafiaBotV2.MafiaLib.Data">
+				<include name="MafiaLib/Data/*.xml" />
+			</resources>
+			<resources prefix="MafiaBotV2.MafiaLib.Data.Random">
+				<include name="MafiaLib/Data/Random/*.xml" />
+			</resources>
+			<resources prefix="MafiaBotV2.MafiaLib.Data.Variants">
+				<include name="MafiaLib/Data/Variants/*.xml" />
+			</resources>
+			<resources prefix="MafiaBotV2.MafiaGame.Http.Data">
+				<include name="MafiaGame/Http/Data/*.*" />
+			</resources>
+		</csc>
+	</target>
+	<target name="install">
+		<mkdir dir="bin" />
+		<copy todir="bin">
+			<fileset>
+				<include name="MafiaBotV2.exe" />
+				<include name="MafiaBotV2.exe.mdb" />
+			</fileset>
+		</copy>
+		<copy todir="bin" file="deps/Meebey.SmartIrc4net.dll" />
+		<copy todir="bin" file="deps/NLog.dll" />
+		<if test="${not file::exists(config)}">
+			<copy file="config.xml" tofile="${config}" />
+		</if>  
+	</target>
+</project>

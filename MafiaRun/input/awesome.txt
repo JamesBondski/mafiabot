@@ -1,0 +1,9 @@
+﻿G:bots 7
+0:join #mafia2
+0:say #mafia2 ##create test
+A:join #mafia_test
+0:say #mafia_test ##variant awesome
+0:say #mafia_test ##start
+1:say #mafia_test ##shoot bot2
+6:whisper nightkill bot4
+3:say #mafia_test ##shoot bot6

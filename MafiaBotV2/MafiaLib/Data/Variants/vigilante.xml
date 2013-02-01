@@ -1,0 +1,42 @@
+<Game>
+	<Name>Vigilante</Name>
+	<Players>6</Players>
+  <Teams>
+    <Team>
+      <Name>Town</Name>
+      <WinsWhen>NoEvilLeft</WinsWhen>
+      <Roles>
+        <Role>
+          <Name>Vanilla Townie</Name>
+          <Count>3</Count>
+        </Role>
+        <Role>
+          <Name>Vigilante</Name>
+          <Count>1</Count>
+          <Daykill>EndsDay</Daykill>
+        </Role>
+        <Role>
+          <Name>Cop</Name>
+          <Count>1</Count>
+          <Investigate />
+        </Role>
+      </Roles>
+    </Team>
+    <Team>
+      <Name>Mafia</Name>
+      <WinsWhen>MajorityOrEqual|NoEvilLeft</WinsWhen>
+      <Evil />
+      <Nightkill />
+      <KnowsGroup />
+      <Roles>
+        <Role>
+          <Name>Mafia</Name>
+          <Count>1</Count>
+        </Role>
+      </Roles>
+    </Team>
+  </Teams>	
+	<Cardflip />
+	<Instalynch />
+	<NoLynch />
+</Game>

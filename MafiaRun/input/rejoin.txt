@@ -1,0 +1,13 @@
+﻿G:bots 7
+0:join #mafia2
+0:say #mafia2 ##create test
+A:join #mafia_test
+0:say #mafia_test ##variant PieC9
+0:say #mafia_test ##start
+A:say #mafia_test ##vote bot3
+3:leave #mafia_test
+3:join #mafia_test
+3:say #mafia_test ##commands
+2:leave #mafia_test
+2:join #mafia_test
+2:say #mafia_test ##commands

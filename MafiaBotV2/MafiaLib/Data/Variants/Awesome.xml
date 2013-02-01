@@ -1,0 +1,34 @@
+<Game>
+	<Name>Awesome</Name>
+	<Players>7</Players>
+  <Teams>
+    <Team>
+      <Name>Town</Name>
+      <WinsWhen>NoEvilLeft</WinsWhen>
+      <Roles>
+        <Role>
+          <Name>Triggerhappy Gun Nut</Name>
+          <Count>6</Count>
+          <Daykill>EndsDay</Daykill>
+        </Role>
+      </Roles>
+    </Team>
+    <Team>
+      <Name>Mafia</Name>
+      <WinsWhen>MajorityOrEqual|NoEvilLeft</WinsWhen>
+      <Evil />
+      <Nightkill />
+      <KnowsGroup />
+      <Roles>
+        <Role>
+          <Name>Mafia</Name>
+          <Count>1</Count>
+          <Daykill />
+        </Role>
+      </Roles>
+    </Team>
+  </Teams>	
+	<Cardflip />
+	<Instalynch />
+	<NoLynch />
+</Game>

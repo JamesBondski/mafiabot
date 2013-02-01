@@ -1,0 +1,47 @@
+<Game>
+	<Name>PieC9</Name>
+	<Players>7</Players>
+  <Teams>
+    <Team>
+      <Name>Town</Name>
+      <WinsWhen>NoEvilLeft</WinsWhen>
+      <Roles>
+        <Role>
+          <Name>Vanilla Townie</Name>
+          <Count>3</Count>
+        </Role>
+        <Role>
+          <Name>Doctor</Name>
+          <Count>1</Count>
+          <Protect />
+        </Role>
+        <Role>
+          <Name>Cop</Name>
+          <Count>1</Count>
+          <Investigate />
+        </Role>
+      </Roles>
+    </Team>
+    <Team>
+      <Name>Mafia</Name>
+      <WinsWhen>MajorityOrEqual|NoEvilLeft</WinsWhen>
+      <Evil />
+      <Nightkill />
+      <KnowsGroup />
+      <Roles>
+        <Role>
+          <Name>Mafia</Name>
+          <Count>1</Count>
+        </Role>
+        <Role>
+          <Name>Roleblocker</Name>
+          <Count>1</Count>
+          <Roleblock />
+        </Role>
+      </Roles>
+    </Team>
+  </Teams>	
+	<Cardflip />
+	<Instalynch />
+	<NoLynch />
+</Game>

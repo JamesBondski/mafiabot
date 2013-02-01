@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Roles>
+  <Role>
+    <Name>Vanilla Townie</Name>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.VotePower" />
+      <Power type="MafiaBotV2.MafiaLib.Powers.UnvotePower" />
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Cop</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.InvestigatePower" />
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Insane Cop</Name>
+    <ShowsAs>Cop</ShowsAs>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.InvestigatePower">
+        <Sanity>Insane</Sanity>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Paranoid Cop</Name>
+    <ShowsAs>Cop</ShowsAs>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.InvestigatePower">
+        <Sanity>Paranoid</Sanity>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Naive Cop</Name>
+    <ShowsAs>Cop</ShowsAs>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.InvestigatePower">
+        <Sanity>Naive</Sanity>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Doctor</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.ProtectPower" />
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Bodyguard</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.ProtectPower">
+        <DieOnSuccess>true</DieOnSuccess>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Vigilante</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.DaykillPower" charges="1">
+        <EndsDay>true</EndsDay>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Tracker</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.TrackerPower">
+        <TrackerType>Tracker</TrackerType>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Watcher</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.TrackerPower">
+        <TrackerType>Watcher</TrackerType>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Bulletproof</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Effects>
+      <Effect type="MafiaBotV2.MafiaLib.Effects.CancellingEffect" duration="255">
+        <CancelType>MafiaBotV2.MafiaLib.Powers.NightkillPower</CancelType>
+      </Effect>
+    </Effects>
+  </Role>
+  <Role>
+    <Name>Miller</Name>
+    <ShowsAs>Vanilla Townie</ShowsAs>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Effects>
+      <Effect type="MafiaBotV2.MafiaLib.Effects.FlipInvestigationEffect" duration="255" />
+    </Effects>
+  </Role>
+  <Role>
+    <Name>Jailer</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.AggregatePower">
+        <Name>jail</Name>
+        <Powers>MafiaBotV2.MafiaLib.Powers.ProtectPower,MafiaBotV2.MafiaLib.Powers.RoleblockPower</Powers>
+      </Power>
+    </Powers>
+  </Role>
+  <Role>
+    <Name>Godfather</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Effects>
+      <Effect type="MafiaBotV2.MafiaLib.Effects.FlipInvestigationEffect" duration="99" />
+    </Effects>
+  </Role>
+  <Role>
+    <Name>Mafia</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+  </Role>
+  <Role>
+    <Name>Roleblocker</Name>
+    <InheritsFrom>Vanilla Townie</InheritsFrom>
+    <Powers>
+      <Power type="MafiaBotV2.MafiaLib.Powers.RoleblockPower" />
+    </Powers>
+  </Role>
+</Roles>

@@ -1,0 +1,14 @@
+﻿G:bots 7
+0:join #mafia2
+0:say #mafia2 ##create test
+A:join #mafia_test
+0:say #mafia_test ##variant Kingmaker
+0:say #mafia_test ##start
+5:whisper kingmake Bot1
+1:say #mafia_test ##shoot Bot4
+6:whisper nightkill Bot3
+5:whisper kingmake Bot4
+4:say #mafia_test ##shoot Bot5
+6:whisper nightkill Bot2
+A:whisper kingmake Bot6
+6:say #mafia_test ##shoot Bot4

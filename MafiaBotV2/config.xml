@@ -1,0 +1,19 @@
+<Config>
+  <Network>Irc</Network>
+  <Server>
+    <Host>irc.synirc.net</Host>
+    <Port>6667</Port>
+    <Nickname>MafiaBot2</Nickname>
+    <Channel>#mafia2</Channel>
+  </Server>
+  <Games>
+    <Mafia>
+      <Prefix>mafia_</Prefix>
+    </Mafia>
+  </Games>
+  <Logging>
+  	<Temp>temp</Temp>
+  	<Directory>/var/www/logs</Directory>
+  	<URL>http://mafiabot.game-host.org/logs</URL>
+  </Logging>
+</Config>
